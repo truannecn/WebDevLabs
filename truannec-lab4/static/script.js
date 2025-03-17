@@ -66,7 +66,7 @@ function greetingFunc() {
     }
 }
 
-if ((window.Location.href == "https://truannecn.github.io/WebDevLabs/index.html") || (window.location.href == "http://127.0.0.1:5501/truannec-lab4/index.html"))
+if ((window.Location.href == "https://truannecn.github.io/WebDevLabs/index.html") || (window.location.href == "truannecn.github.io/WebDevLabs/"))
 {
     console.log("yes i am trying");
     greetingFunc();
