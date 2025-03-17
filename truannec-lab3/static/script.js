@@ -62,7 +62,5 @@ function greetingFunc() {
     }
 }
 
-console.log(window.location.href)
-if (window.location.href == "index.html") {
-    greetingFunc();
-}
+
+greetingFunc();
