@@ -66,9 +66,9 @@ function greetingFunc() {
     }
 }
 
+greetingFunc();
 if ((window.Location.href == "https://truannecn.github.io/WebDevLabs/index.html") || (window.location.href == "truannecn.github.io/WebDevLabs/"))
 {
-    console.log("yes i am trying");
     greetingFunc();
 }
 
