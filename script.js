@@ -62,9 +62,7 @@ function greetingFunc() {
     }
 }
 
-greetingFunc();
-
-// console.log(window.location.href)
-// if (window.location.href == "https://truannecn.github.io/WebDevLabs/truannec-lab3/index.html") {
-//     greetingFunc();
-// }
+console.log(window.location.href)
+if (window.location.href == "index.html") {
+    greetingFunc();
+}
