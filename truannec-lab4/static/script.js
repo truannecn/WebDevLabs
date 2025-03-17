@@ -99,12 +99,7 @@ function showLess() {
 }
 
 function checkForm() {
-    console.log("Checking!")
-    console.log(document.getElementById("nameField").checkValidity())
-    console.log(document.getElementById("commentArea").checkValidity())
-    console.log(document.getElementById("emailField").checkValidity())
     if (document.getElementById("nameField").checkValidity() == false) {
-        console.log("Uh oh")
         document.getElementById("seeMoreButton").style.display = "block";
         $("#errorMessage").show();
     }
