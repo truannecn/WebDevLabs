@@ -25,15 +25,31 @@
             <a class = "navi" href="./contact.html">Contact Me</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Things I Love To Do For Fun</h2>
-        <button id = "seeMoreButton" onclick = "showList()">Click to see...</button>
-        <ul id = "funList">
-            <li>Listening To Music</li>
-            <li>Going on long walks</li>
-            <li>Having deep conversations with friends</li>
-            <li>Coding!</li>
-        </ul>
+    <div class="mainLayout">
+        <div class = "item1">
+            <h2>Things I Love To Do For Fun</h2>
+            <!-- <button id = "seeMoreButton" onclick = "showList()">Click to see...</button> -->
+            <ul id = "funList">
+                <li>Listening To Music</li>
+                <li>Going on long walks</li>
+                <li>Having deep conversations with friends</li>
+                <li>Coding!</li>
+            </ul>
+        </div>
+        <div class = "item2">
+            <img class = "funIMG" src = "../static/matcha.jpg">
+
+        </div>
+        <div class = "item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yu3gyPcXcK0?si=qiPE-kQKyRsgwKPJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class = "item4">
+            <div class = "container">
+                <h2>Need Some Advice?</h2>
+                <p id = "adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick = "getAdvice()">Get Advice</button>
+            </div>
+        </div>
     </div>
     <footer>
         <p id = "copyYear">designed and coded by Truanne Chen &copy;</p>

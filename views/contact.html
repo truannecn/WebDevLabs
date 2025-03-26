@@ -25,20 +25,27 @@
             <a class = "navi" href="./contact.html">Contact Me</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Contact Me</h2>
+    <div class="mainLayout">
+        <div class = "item1">
+            <h2>Find Me</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30560.850821222513!2d-3.0079794!3d16.77138355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe17ce977cbc8733%3A0x546f01bc8958b7c6!2sTimbuktu%2C%20Mali!5e0!3m2!1sen!2sus!4v1742773368778!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-        <form>
-            <label>Your Name (Required)</label>
-            <input id = "nameField" type = "text" required>
-            <label>Your Email</label>
-            <input id = "emailField" type = "email" required>
-            <br>
-            <label>Your comment</label>
-            <textarea required id = "commentArea"></textarea>
-            <input id = "submitButton" type = "submit" value = "SEND" onclick = "checkForm()">
-        </form>
-        <p id = "errorMessage">Please complete all fields so I can get back to you!</p>
+        <div class = "item2">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Your Name (Required)</label>
+                <input id = "nameField" type = "text" required>
+                <label>Your Email</label>
+                <input id = "emailField" type = "email" required>
+                <br>
+                <label>Your comment</label>
+                <textarea required id = "commentArea"></textarea>
+                <input id = "submitButton" type = "submit" value = "SEND" onclick = "checkForm()">
+            </form>
+            <p id = "errorMessage">Please complete all fields so I can get back to you!</p>
+        </div>
+        
 
         <table>
             <tr>

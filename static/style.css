@@ -51,9 +51,9 @@ form * {
     display: block;
 }
 
-#funList {
+/* #funList {
     display: none;
-}
+} */
 
 #intro {
     display: none;
@@ -78,4 +78,31 @@ form * {
     padding: 15px;
     color: red;
     text-align: center;
+}
+
+.funIMG {
+    border-radius: 40%;
+}
+
+.container {
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 7px 5px 5px green;
+}
+
+#adviceText {
+    background-color: var(--tableHeadGreen);
+    border: none;
+    border-radius: 6px;
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item1, .item2, .item3, .item4 {
+    flex: 1 1 45%;
+    align-self: center;
 }

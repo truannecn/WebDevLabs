@@ -60,15 +60,16 @@ function greetingFunc() {
     } else if (h < 12) {
         dynamic.innerHTML = ("Good morning, I am Truanne!");
     } else if (h < 18) {
-        dynamic.innerHTML =("Good afernoon, I am Truanne!");
+        dynamic.innerHTML =("Good afternoon, I am Truanne!");
     } else if (h < 20) {
         dynamic.innerHTML = ("Good evening, I am Truanne!");
     }
 }
 
-if ((window.Location.href == "https://truannecn.github.io/WebDevLabs/index.html") || (window.location.href == "http://127.0.0.1:5501/truannec-lab4/index.html"))
+var loc = window.location.href;
+
+if (loc.includes("index.html"))
 {
-    console.log("yes i am trying");
     greetingFunc();
 }
 
@@ -79,10 +80,10 @@ function addYear() {
     copyYear.innerHTML = (shown + " designed and coded by Truanne Chen &copy;");
 }
 
-function showList() {
-    document.getElementById("seeMoreButton").style.display = "none";
-    document.getElementById("funList").style.display = "block";
-}
+// function showList() {
+//     document.getElementById("seeMoreButton").style.display = "none";
+//     document.getElementById("funList").style.display = "block";
+// }
 
 function showMore() {
     console.log("cliked read more button")
@@ -99,12 +100,7 @@ function showLess() {
 }
 
 function checkForm() {
-    console.log("Checking!")
-    console.log(document.getElementById("nameField").checkValidity())
-    console.log(document.getElementById("commentArea").checkValidity())
-    console.log(document.getElementById("emailField").checkValidity())
     if (document.getElementById("nameField").checkValidity() == false) {
-        console.log("Uh oh")
         document.getElementById("seeMoreButton").style.display = "block";
         $("#errorMessage").show();
     }
@@ -114,4 +110,20 @@ function checkForm() {
     if (document.getElementById("commentArea").checkValidity()== false) {
         $("#errorMessage").show();
     }
+}
+
+
+function getAdvice() {
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            const advice = data.slip.advice;
+            document.getElementById('adviceText').innerText = advice;
+        })
+        .catch(error => {
+            console.error('Error fetching:', error);
+            document.getElementById('adviceText').innerText = 'Error! Please try again later.';
+        });
 }
