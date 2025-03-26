@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./static/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b1523b854c.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Truanne Chen">
+    <meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
+    <meta name = "description" content = "Truanne Chen profressional website">
+    <title>Truanne Chen</title>
+</head>
+<body>
+    <div class = "grid-container">
+        <header>
+            <h2 id = "dynamic">Hi, my name is Truanne.</h2>
+        </header>
+        <nav>
+            <div class = "menu-toggle" id = "menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class = "nav-links" id = "nav-links">
+                <a class = "navi" href="./template.html">Home</a>
+                <a class = "navi" href="./views/cv.html">CV</a>
+                <a class = "navi" href="./views/fun.html">For Fun</a>
+                <a class = "navi" href="./views/contact.html">Contact Me</a>
+            </div>
+        </nav>
+        <figure>
+            <img class = "me" src = "static/truanne.JPG" alt = "A picure of Truanne.">
+        </figure>
+        <main> 
+            <p id = "intro">Hey! My name is Truanne (pronounced "true anne") and I am a current first year student at Carnegie Mellon. With a passion for leveraging technology for social good, I'm currently pursuing a major in Information Systems and plan to pursue an additional major in Human Computer Interaction.</p>
+            <p id = "introShort">Hey! My name is Truanne and I'm a first year student!</p>
+            <button id = "readMore" onclick = "showMore()">read more...</button>
+            <button id = "readLess" onclick = "showLess()">read less...</button>
+        </main>
+        <summary> This is the bottom content of my page! Thanks for getting to know me. I love matcha.</summary>
+        <footer>
+            <p id = "copyYear">designed and coded by Truanne Chen &copy;</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
